@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * natural - -program execution starts here.
+ * main - program execution starts here.
  * Description: prints all the multiples of 3 and 5 and the sums it
  * Return: Always 0.
  */
@@ -11,7 +11,7 @@ int main(void)
 
 	sum = 0;
 
-	(for (counter = 1; counter < 1024; counter++)
+	for (counter = 1; counter < 1024; counter++)
 	{
 		if (counter % 3 == 0 || counter % 5 == 0)
 		{
@@ -20,5 +20,5 @@ int main(void)
 	}
 	printf("%d\n", sum);
 
-	return 0;
+	return (0);
 }
