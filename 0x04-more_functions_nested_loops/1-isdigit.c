@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isdigit - checks the code for digitd between 0 and 9
+ * _isdigit - checks the code for digits between 0 and 9
  * @c: placeholder for all possible digits 0 through 9
  * Return: 1 for true and 0 otherwise.
  */
@@ -15,5 +15,6 @@ int _isdigit(int c)
 	{
 		return (0);
 	}
+	return (0);
 }
 
