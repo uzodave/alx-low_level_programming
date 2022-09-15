@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * main - runs from 1 through 100
+ * Description: Simple program to test multiples of
+ * 3, 5 and both
+ * Return: void
  */
 int main(void)
 {
@@ -24,7 +25,7 @@ int main(void)
 			printf("FizzBuzz");
 		}
 		else
-		printf("%d", i);
+			printf("%d", i);
 
 		if (i != 100)
 			putchar(' ');
