@@ -8,24 +8,17 @@
 int main(void)
 {
 	long int n = 612852475143;
-	long int i;
-	long int large_prime = 1;
+	long int pf;
 
-	for (i = 2; i < n; i++)
+	for (pf = 2; pf <= n; pf++)
 	{
-		if (n % i == 0)
+		if (n % pf == 0)
 		{
-			large_prime *= i;
-			n /= i;
-			if (n == 1)
-			{
-				printf("%lu\n", i);
-				return (0);
+			n /= pf;
+			pf--;
 		}
-			i = 1;
 	}
-	}
-
-			return (0);
+	printf("%ld\n", pf);
+	return (0);
 }
 
