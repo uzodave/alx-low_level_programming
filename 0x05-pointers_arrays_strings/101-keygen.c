@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - random password generator for the 
+ * main - random password generator for the
  * 101-crackme program
  *
  * Return: 0
@@ -24,7 +24,7 @@ int main(void)
 		while ((2772 - 122) > s)
 		{
 			j = rand() % 62;
-			p[i] = c [j];
+			p[i] = c[j];
 			s += c[j];
 			i++;
 		}
