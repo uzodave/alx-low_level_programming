@@ -9,12 +9,14 @@
  * Return: a pointer to dest
  */
 char *_strchr(char *s, char c)
+
 {
-	while (*s != '\0')
+	char *ss = s - 1;
+	while (*ss != '\0')
 	{
-		if (*s == c)
-			return (s);
-		s++;
+		if (*ss == c)
+			return (ss);
+		ss++;
 	}
 	return (0);
 }
