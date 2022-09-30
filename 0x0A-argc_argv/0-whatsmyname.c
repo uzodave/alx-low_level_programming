@@ -8,7 +8,7 @@
  * Description: the program uses arguments to main
  * Return: 0 for success
  */
-int main(int __attribute__ ((unused)) argc, char **argv)
+int main(int __attribute__ ((unused)) argc, char *argv[])
 {
 	/*(void)argc;*/
 	printf("%s\n", argv[0]);
