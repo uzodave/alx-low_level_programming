@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+#include "main.h"
 
 /**
  * digit_test - checks for integers in an array
- * of character
+ * of characters
  * @s: string pointer
- * Return 0 for true
+ * Return: 0 for true
  */
 int digit_test(char *s)
 {
