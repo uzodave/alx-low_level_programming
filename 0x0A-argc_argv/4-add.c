@@ -24,8 +24,6 @@ int main(int argc, char *argv[])
 			if (isdigit(*argv[i]))
 			{
 				result += atoi(argv[i]);
-				if (i == argc - 1)
-					printf("%d\n", result);
 			}
 			else
 			{
@@ -33,6 +31,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
+		printf("%d\n", result);
 	}
 		return (0);
 }
