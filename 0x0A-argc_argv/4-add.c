@@ -3,6 +3,23 @@
 #include <ctype.h>
 
 /**
+ * digit_test - checks for integers in an array
+ * of character
+ * @s: string pointer
+ * Return 0 for true
+ */
+int digit_test(char *s)
+{
+	while (*s != '\0')
+	{
+		if (*s < '0' || *s > '9')
+			return (0);
+		s++;
+	}
+	return (1);
+}
+
+/**
  * main - adds positive numbers
  * @argc: count of arguments in the program
  * @argv: array of pointers to strings(the arguments)
@@ -15,13 +32,15 @@ int main(int argc, char *argv[])
 	int i;
 	int result = 0;
 
-	if (argc == 1)
-		printf("%d\n", result);
-	if (argc > 1)
-	{
+	/**
+	 * if (argc == 1)
+	 * printf("%d\n", result);
+	 * if (argc > 1)
+	 * {}
+	 */
 		for (i = 1; i < argc; i++)
 		{
-			if (isdigit(*argv[i]))
+			if (digit_test(argv[i]))
 			{
 				result += atoi(argv[i]);
 			}
@@ -32,6 +51,5 @@ int main(int argc, char *argv[])
 			}
 		}
 		printf("%d\n", result);
-	}
 		return (0);
 }
