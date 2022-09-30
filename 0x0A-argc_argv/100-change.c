@@ -10,7 +10,7 @@
  * (command line arguments)
  * Return: 0 for success
  */
-int main(int argc, char *argv[])
+int main(int argc, char __attribute__((unused)) *argv[])
 {
 	/**
 	 * int i;
@@ -22,4 +22,5 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	return (0);
 }
