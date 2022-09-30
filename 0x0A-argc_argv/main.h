@@ -2,6 +2,7 @@
 #define MAIN_H
 
 int _putchar(char c);
-int main(int __attribute__ ((unused)) argc, char **argv);
-int main(int __attribute__ ((unused)) argc, char *argv[])
+int _atoi(char *s);
+int _isdigit(int c);
+
 #endif
