@@ -13,8 +13,8 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int result = 1; 
-	
+	int result = 1;
+
 	if (argc == 3)
 	{
 		for (i = 1; i < argc; i++)
@@ -23,7 +23,10 @@ int main(int argc, char *argv[])
 			if (i == 2)
 			printf("%d\n", result);
 		}
-	}else
+	} else
+	{
 		printf("Error\n");
+		return (1);
+	}
 	return (0);
 }
