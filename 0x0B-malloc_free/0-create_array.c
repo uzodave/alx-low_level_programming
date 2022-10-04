@@ -16,14 +16,14 @@ char *create_array(unsigned int size, char c)
 	/* to allocate enough space for all array elements*/
 	ptrArray = (char *)malloc(size * sizeof(char));
 
+	if (size == 0)
+	{
+		return (NULL);
+	}
 	for (i = 0; i < size; i++)
 	/* assign the char to the specific memory location*/
 	{
 		ptrArray[i] = c;
-	}
-	if (size == 0)
-	{
-		return (NULL);
 	}
 	return (ptrArray);
 }
