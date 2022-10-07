@@ -5,7 +5,7 @@
 /**
  * print - moves a string one place to the left and prints it
  * @str: string to be moved
- * @size: size of the string
+ * @l: size of the string
  * Return: void
  */
 void print(char *str, int l)
