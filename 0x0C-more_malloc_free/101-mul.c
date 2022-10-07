@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 /**
- * print - moves a string one place to the left and prints it
+ * _print - moves a string one place to the left and prints it
  * @str: string to be moved
  * @l: size of the string
  * Return: void
  */
-void print(char *str, int l)
+void _print(char *str, int l)
 {
 	int i, j;
 
@@ -135,6 +135,6 @@ int main(int argc, char **argv)
 			exit(98);
 		}
 	}
-	print(a, ln - 1);
+	_print(a, ln - 1);
 	return (0);
 }
