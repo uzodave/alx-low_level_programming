@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "function_pointers"
+#include "function_pointers.h"
 
 /**
  * array_iterator - is a function that executes a function given as a
