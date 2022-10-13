@@ -3,9 +3,10 @@
 #include <string.h>
 
 /**
- * sum_them_all - returns the sum of all its parameters
+ * print_numbers - prints numbers followed by a new line
  * @n: integer var
- * Return: sum
+ * @separator: predetermined string separator
+ * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -19,12 +20,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		return;
 	for (i = 0; i < n; i++)
 	{
-		 int x = va_arg(args, int);
-		 printf("%d",x);
-		 if (i != (n - 1))
+		int x = va_arg(args, int);
+			printf("%d", x);
+		if (i != (n - 1))
 			for (j = 0; j < numstr; j++)
 			{
-		 		putchar(separator[j]);
+				putchar(separator[j]);
 			}
 	}
 		printf("\n");
